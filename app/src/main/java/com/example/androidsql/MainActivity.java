@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import com.mysql.protocol.Resultset;
+//import com.mysql.protocol.cj.Resultset;
 
 
 import java.sql.Connection;
@@ -55,7 +55,10 @@ public class MainActivity extends AppCompatActivity {
                 //Connection connection = DriverManager.getConnection("jdbc:mysql://b074b10df9459b:bbfa6545@us-cdbr-east-06.cleardb.net/heroku_e1cccceed05ce1f?reconnect=true");
                 //Connection connection = DriverManager.getConnection("jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_e1cccceed05ce1f","b074b10df9459b","bbfa6545");
 
-                Connection connection = DriverManager.getConnection("jdbc:mysql://172.105.106.22/test","pcdobot","%$FrAustria2013%$");
+                Connection connection = DriverManager.getConnection("jdbc:mysql://139.177.199.178/test","seugirdur","%$FrAustria2013%$");
+                //Connection connection = DriverManager.getConnection("jdbc:mysql://172.105.106.22/test","pcdobot","%$FrAustria2013%$");
+
+
 
                 //Connection connection = DriverManager.getConnection("jdbc:postgresql://tesaoeanhrepj:aXOoO0LEXJPkQoexanTF-ZbUCxo1tMt_@kesavan.db.elephantsql.com/eanhrepj","eanhrepj","aXOoO0LEXJPkQoexanTF-ZbUCxo1tMt_");
                 Statement statement = connection.createStatement();
