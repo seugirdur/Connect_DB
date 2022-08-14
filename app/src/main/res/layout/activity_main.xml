@@ -17,14 +17,14 @@
         android:id="@+id/tv_1"/>
 
     <Button
+        android:id="@+id/bt_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="king for the baron"
         android:layout_gravity="center"
-        android:textSize="30sp"
         android:layout_marginTop="50sp"
-        android:id="@+id/bt_1">
-        
+        android:text="king for the baron"
+        android:textSize="30sp">
+
     </Button>
 
     <TextView

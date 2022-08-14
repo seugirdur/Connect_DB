@@ -51,10 +51,10 @@ public class MainActivity extends AppCompatActivity {
                 //Connection connection = DriverManager.getConnection("jdbc:postgresql:postgres://kesavan.db.elephantsql.com/eanhrepj","eanhrepj","aXOoO0LEXJPkQoexanTF-ZbUCxo1tMt_");
 
                 //Connection connection = DriverManager.getConnection("jdbc:mysql://b074b10df9459b:bbfa6545@us-cdbr-east-06.cleardb.net/heroku_e1cccceed05ce1f?reconnect=true");
-                Connection connection = DriverManager.getConnection("jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_e1cccceed05ce1f","b074b10df9459b","bbfa6545");
+                Connection connection = DriverManager.getConnection("jdbc:mysql://172.105.106.22/test","seugirdur","%$AustriaFrA2013%$");
                 //Connection connection = DriverManager.getConnection("jdbc:postgresql://tesaoeanhrepj:aXOoO0LEXJPkQoexanTF-ZbUCxo1tMt_@kesavan.db.elephantsql.com/eanhrepj","eanhrepj","aXOoO0LEXJPkQoexanTF-ZbUCxo1tMt_");
                 Statement statement = connection.createStatement();
-                ResultSet resultSet = statement.executeQuery("SELECT FirstName FROM persons");
+                ResultSet resultSet = statement.executeQuery("SELECT FirstName FROM Persons");
 
                 while(resultSet.next()) {
                     records += resultSet.getString(1);
